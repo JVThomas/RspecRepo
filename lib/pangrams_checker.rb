@@ -3,7 +3,7 @@ class PangramsChecker
   attr_accessor :input, :output
   
   def pangram_check()
-    input = @input.downcase.delete(" ").split("").uniq
+    input = @input.downcase.gsub(/\W/,'').split("").uniq
     input.length == 26 ? @output = "pangram" : @output = "not pangram"
     output
   end
