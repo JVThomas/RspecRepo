@@ -1,7 +1,7 @@
 
 class AlternatingCharacters
 
-  def self.run
+  def run
     puts "Enter the number of test cases"
     num_cases = gets.chomp.to_i
     
@@ -12,7 +12,7 @@ class AlternatingCharacters
     end
   end
 
-  def self.alternate_check(sequence)
+  def alternate_check(sequence)
     i = 0
     j = 1
     num_deletions = 0;
@@ -27,6 +27,4 @@ class AlternatingCharacters
     end
     puts num_deletions
   end
-
-  AlternatingCharacters.run 
 end
