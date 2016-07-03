@@ -8,7 +8,7 @@ describe AlternatingCharacters do
   
   describe '#run' do
     it 'should ask the user for test cases' do
-      expect {@ac.run}.to output('Enter the number of test cases'+ "\n").to_stdout
+      expect{@ac.run}.to output('Enter the number of test cases'+ "\n").to_stdout
     end
     it 'should accept a string for analysis' do
       @ac.run

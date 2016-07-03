@@ -23,5 +23,4 @@ describe PangramsChecker do
      @pc.get_input
      expect(@pc.pangram_check).to eq("not pangram")
   end
-
 end
